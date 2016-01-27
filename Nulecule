@@ -1,21 +1,21 @@
 ---
 specversion: 0.0.2
-id: bitscout-qpid-router-app
+id: viaq-nulecule-qpid-router
 
 metadata:
-  name: QPID dispatch router for BitScout
+  name: QPID dispatch router for ViaQ
   appversion: 0.0.1
-  description: BitScout implementation of QPID dispatch router
+  description: ViaQ implementation of QPID dispatch router
 
 graph:
-  - name: bitscout-qpid-router
+  - name: viaq-qpid-router
     params:
       - name: appname
         description: Name given to docker run --name
-        default: bitscout-qpid-router
+        default: viaq-qpid-router
       - name: image
         description: Image to run
-        default: bitscout/qpid-router:latest
+        default: viaq/qpid-router:latest
     artifacts:
       docker:
         - file://artifacts/docker/run
